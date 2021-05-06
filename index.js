@@ -4,10 +4,10 @@ console.log('Is this thing on?')
 const express = require('express')
 
 const PORT = process.env.PORT || 5000
+const server = express();
 
 server.use(express.static(path.join(__dirname, 'client/build')))
 
-const server = express();
 
 server.use(express.json());
 
