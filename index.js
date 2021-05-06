@@ -13,7 +13,7 @@ server.use(express.json());
 
 server.get('/api/*', (req, res) =>{
     res.json({
-        bestanimecharacter: 'Deku',
+        favAnime: 'MHA',
     })
 })
 
